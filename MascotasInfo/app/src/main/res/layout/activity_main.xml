@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Name Label and Input -->
+    <ImageView
+        android:id="@+id/droidImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pets01" />
+
+    <TextView
+        android:id="@+id/nombreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"/>
+
+    <EditText
+        android:id="@+id/nombreInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la mascota"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/tipoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo:" />
+
+    <EditText
+        android:id="@+id/claseInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo de mascota:"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/edadLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad:" />
+
+    <EditText
+        android:id="@+id/edadInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad de la mascota:"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/propietarioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Propietario:" />
+
+    <EditText
+        android:id="@+id/propietarioInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dueño de la mascota:"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/cedulaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cédula:"/>
+
+    <EditText
+        android:id="@+id/cedulaInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cédula del propietario:"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/telefonoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono:"/>
+
+    <EditText
+        android:id="@+id/telefonoInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono del propietario:"
+        android:minHeight="48dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/guardarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
