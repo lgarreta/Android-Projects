@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -26,7 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre de la mascota"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/tipoLabel"
@@ -39,7 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tipo de mascota:"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/edadLabel"
@@ -52,7 +57,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Edad de la mascota:"
-        android:minHeight="48dp"/>
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/propietarioLabel"
@@ -65,7 +72,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Dueño de la mascota:"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/cedulaLabel"
@@ -78,7 +86,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Cédula del propietario:"
-        android:minHeight="48dp"/>
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/telefonoLabel"
@@ -91,7 +101,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Teléfono del propietario:"
-        android:minHeight="48dp"/>
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:singleLine="true" />
 
     <!-- Submit Button -->
     <Button
@@ -103,3 +115,4 @@
         android:layout_marginTop="24dp" />
 
 </LinearLayout>
+</ScrollView>
